@@ -4,7 +4,7 @@ const express = require('express')
 const userRouter = require('./routers/auth')
 const viewRouter = require('./routers/view')
 const app = express()
-const PORT = 5000
+const PORT = process.env.PORT || 5000
 
 // 解析要放在路由前面才會經過
 // bodypaser可以用在這邊全域 也可以放在router裡面
